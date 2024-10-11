@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal Page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Pascal Esteves</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Pascal Esteves</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class="section__pic-container">
+            <img src="static/images/perfil_photo.png" alt="Pascal profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title">Pascal Esteves</h1>
+            <p class="section_text__p2">Python Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('static/documents/Pascal Garcia Esteves - CV.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                  </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="static/images/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/pascal-esteves-53023587/'"
+              />
+              <img
+              src="static/images/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/PascalEsteves'"
+            />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                src="static/images/about_photo.jpeg"
+                alt="Profile picture"
+                class="about__pic">
+            </div>
+            <div class="about-details-container">
+                <div class="details-container">
+                    <img
+                    src="static/images/experience.png"
+                    alt="Experience Logo"
+                    class="icon">
+                    <h3>Experience</h3>
+                    <p>7+ years <br> Python Developer</p>
+                    <p>4+ years <br> AI Developer </p>
+                </div>
+                <div class="details-container">
+                    <img
+                    src="static/images/education.png"
+                    alt="Education Logo"
+                    class="icon"
+                    >
+                    <h3>Education</h3>
+                    <p> Master Degree in Electrical & Computer Science <br>Instituto Superior Técnico</p>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm Pascal Garcia Esteves, an experienced Python Developer with a background in Electrical and Computer Science Engineering.
+                        I specialize in Python and cloud-based data solutions, with a strong track record in designing, building, and optimizing data pipelines
+                        and platforms. My expertise extends to implementing AI and machine learning models to uncover insights and support data-driven decision-making.
+                        With a deep understanding of both technical execution and business strategy, I work closely with cross-functional teams to deliver scalable,
+                        high-performance solutions, ensuring seamless project execution and effective knowledge transfer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
